@@ -1,22 +1,12 @@
-             
-
-// let myform=document.querySelector('.login-form')
-
-
-// myform.addEventListener('submit',(e)=>{
-//   e.preventDefault()
-// let formdata= new FormData(document.querySelector('.login-form'))
-// console.log(formdata)
-// fetch('/user',{
-//     method:'post',
-//     body:formdata
-// }).then((response)=>{
-//     return response.text()
-// }).then((text)=>{
-//     console.log(text)
-// }).catch((error)=>{
-//     console.log(error)
-// })
-
-
-// })
+let check=document.querySelector('.change')
+let table=document.querySelector('.table')
+table.style.display="none"
+check.addEventListener('click',()=>{
+    if (table.style.display==="none"){
+        check.textContent="Hide Profile"
+        table.style.display="block"
+    }else{
+        check.textContent="My profile"
+        table.style.display="none"
+    }
+})
